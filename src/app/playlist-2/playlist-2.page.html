@@ -1,0 +1,54 @@
+<ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="playlist-header">
+      <img src="assets/img/duki-album.jpg" alt="Playlist 2" class="playlist-image" />
+      <h1 class="playlist-title">Argentinos</h1>
+    </div>
+
+    <div class="song-list">
+      <div class="song-item" (click)="playSong(2.1)">
+        <span class="song-title">Duki - Malbec x Bizarrap</span>
+        <span class="song-duration">2:56</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.2)">
+        <span class="song-title">NATHY PELUSO - MANHATTAN</span>
+        <span class="song-duration">3:24</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.3)">
+        <span class="song-title">Tiago PZK - RCP</span>
+        <span class="song-duration">3:03</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.4)">
+        <span class="song-title">Paulo Londra - Adan y Eva</span>
+        <span class="song-duration">4:20</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.5)">
+        <span class="song-title">Trueno - MAMICHULA</span>
+        <span class="song-duration">3:38</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.6)">
+        <span class="song-title">Nicki Nicole - Colocao</span>
+        <span class="song-duration">3:03</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.7)">
+        <span class="song-title">LIT killah - La Tormenta</span>
+        <span class="song-duration">3:00</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.8)">
+        <span class="song-title">KHEA - Dónde Estás</span>
+        <span class="song-duration">2:33</span>
+      </div>
+      <div class="song-item" (click)="playSong(2.9)">
+        <span class="song-title">MILO J - RINCÓN</span>
+        <span class="song-duration">2:47</span>
+      </div>
+    </div>
+
+    <ion-button class="custom-button" (click)="playAll()">
+      Reproducir Todo
+    </ion-button>
+  </div>
+</ion-content>

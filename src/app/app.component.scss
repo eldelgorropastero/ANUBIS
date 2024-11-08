@@ -1,0 +1,79 @@
+/* app.component.scss */
+
+ion-menu {
+  --background: linear-gradient(to bottom, #001c54 0%, #000000 100%);
+}
+
+ion-header {
+  background-color: #000000; /* Color de fondo negro */
+}
+
+ion-toolbar {
+  --background: #000000; /* Asegúrate de que el fondo de la toolbar sea negro */
+  --color: #f9c336; /* Color del texto de la toolbar */
+}
+
+ion-content {
+  --background: linear-gradient(to bottom, #001c54 0%, #000000 100%);
+}
+
+.ion-page {
+  #main-content {
+    text-align: center; /* Centrar el contenido */
+  }
+}
+
+/* Estilo de los botones en el menú */
+.button-container {
+  display: flex; /* Usar flexbox para centrar */
+  flex-direction: column; /* Alinear en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  height: 100%; /* Asegurar que ocupe toda la altura */
+}
+
+.custom-button {
+  display: flex; /* Para centrar el contenido del botón */
+  justify-content: center; /* Centrar horizontalmente el contenido */
+  width: 80%; /* Ancho más pequeño y centrado */
+  max-width: 200px; /* Ancho máximo para mantener la uniformidad */
+  margin: 12px auto; /* Espacio entre botones */
+  padding: 12px 0; /* Espaciado interno */
+  --background: #f9c336; /* Fondo transparente */
+  --color: #000000; /* Color del texto amarillo */
+  --border: 2px solid #f9c336; /* Borde del botón */
+  --border-radius: 25px; /* Bordes redondeados */
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra más sutil */
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background 0.3s, color 0.3s; /* Transición suave */
+}
+
+
+/* Cambios al pasar el mouse */
+.custom-button:hover {
+  --background: #f9c336; /* Color de fondo amarillo al pasar el mouse */
+  --color: #000000; /* Color de texto negro al pasar el mouse */
+}
+
+/* Texto de bienvenida */
+.welcome-text {
+  color: #f9c336; /* Color amarillo */
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px; /* Espacio arriba del texto */
+  font-size: 20px; /* Tamaño de la fuente más grande */
+}
+
+/* Estilo específico para el botón "Mi Cuenta" en el menú */
+ion-item.custom-button {
+  --background: #f9c336; /* Fondo transparente */
+  --color: #000000; /* Color del texto amarillo */
+  --border: 2px solid #f9c336; /* Borde del botón */
+  --border-radius: 25px; /* Bordes redondeados */
+  padding: 12px 0; /* Espaciado interno */
+  transition: background 0.3s, color 0.3s; /* Transición suave */
+}
+
+ion-item.custom-button:hover {
+  --background: #f9c336; /* Color de fondo amarillo al pasar el mouse */
+  --color: #000000; /* Color de texto negro al pasar el mouse */
+}

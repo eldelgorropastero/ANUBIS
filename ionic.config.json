@@ -1,0 +1,7 @@
+{
+  "name": "anubisApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

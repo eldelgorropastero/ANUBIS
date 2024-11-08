@@ -1,0 +1,8 @@
+<div class="news-item">
+  <img [src]="image" alt="Noticia" class="news-image" (click)="toggleReadMore()" />
+  <h3>{{ title }}</h3>
+  <p [ngClass]="{ 'collapsed': collapsed }">{{ description }}</p>
+  <ion-button (click)="toggleReadMore()" *ngIf="!collapsed">
+    Leer menos
+  </ion-button>
+</div>

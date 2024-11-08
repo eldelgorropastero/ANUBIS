@@ -1,0 +1,73 @@
+/* biblioteca.page.scss */
+
+ion-content {
+  --background: linear-gradient(to bottom, #001c54, #000000); /* Degradado azul oscuro a negro */
+  color: #f9c336; /* Color de texto amarillo */
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+#container {
+  text-align: center;
+}
+
+.welcome-text {
+  color: #f9c336; /* Color amarillo */
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px; /* Espacio arriba del texto */
+  font-size: 24px; /* Tamaño de la fuente aumentado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.playlist {
+  background: rgba(249, 195, 54, 0.1); /* Fondo semitransparente amarillo */
+  border-radius: 12px; /* Bordes redondeados */
+  margin: 15px 0; /* Espaciado vertical */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+  transition: transform 0.3s; /* Transición suave */
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.playlist img {
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para la imagen */
+}
+
+.playlist-title {
+  color: #f9c336; /* Color amarillo para el título */
+  font-size: 20px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.playlist:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.custom-button {
+  width: 200px;
+  margin: 20px auto; /* Espaciado en la parte superior e inferior */
+  --background: #f9c336; /* Color de fondo amarillo */
+  --color: #001c54; /* Color de texto azul oscuro */
+  --border-radius: 12px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el botón */
+  transition: background 0.3s; /* Transición suave */
+}
+
+.custom-button:hover {
+  --background: #001c54; /* Cambia a azul oscuro al pasar el ratón */
+  --color: #f9c336; /* Cambia el color del texto al pasar el ratón */
+}
+
+ion-header {
+  background-color: #000000; /* Color de fondo negro */
+}
+
+ion-toolbar {
+  --background: #000000; /* Fondo de la barra de herramientas negro */
+  --color: #f9c336; /* Color del texto amarillo */
+}

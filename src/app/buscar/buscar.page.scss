@@ -1,0 +1,85 @@
+ion-content {
+  --background: linear-gradient(to bottom, #001c54 0%, #000000 100%); /* Degradado azul oscuro a negro */
+  color: #f9c336; /* Color de texto amarillo */
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+#container {
+  text-align: center;
+  position: relative; /* Cambiado a relativo para ajustar la posición del contenido */
+  padding-top: 20px; /* Espacio en la parte superior para evitar que se superponga con el encabezado */
+}
+
+ion-header {
+  background-color: #000000; /* Color de fondo negro */
+}
+
+ion-toolbar {
+  --background: #000000; /* Fondo de la barra de herramientas negro */
+  --color: #f9c336; /* Color del texto amarillo */
+}
+
+ion-searchbar {
+  --background: #001c54; /* Color de fondo azul oscuro */
+  --color: #f9c336; /* Color del texto amarillo */
+  border-radius: 12px; /* Bordes redondeados */
+  margin: 10px; /* Margen alrededor de la barra de búsqueda */
+  padding: 10px; /* Espaciado interno para el texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para mayor profundidad */
+}
+
+ion-list {
+  margin: 10px; /* Margen alrededor de la lista */
+  padding: 0; /* Sin padding adicional */
+}
+
+ion-item {
+  background: rgba(249, 195, 54, 0.05); /* Fondo semitransparente amarillo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 10px 0; /* Espaciado vertical entre los elementos */
+  padding: 10px 15px; /* Espaciado interno */
+  color: #f9c336; /* Color de texto amarillo */
+  display: flex; /* Usar flex para alinear el contenido */
+  justify-content: space-between; /* Espacio entre el título y la duración */
+  transition: background 0.3s, transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+ion-item:hover {
+  background: rgba(249, 195, 54, 0.1); /* Fondo más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.song-title {
+  font-size: 18px; /* Tamaño de la fuente */
+  font-weight: 500; /* Peso de la fuente */
+}
+
+.song-duration {
+  color: #ccc; /* Color gris para la duración */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+ion-header {
+  background-color: #000000; // Color de fondo del encabezado
+}
+
+ion-toolbar {
+  --background: #000000; // Fondo negro
+  --color: #f9c336; // Color del texto
+}
+
+.search-message, .no-results-message {
+  text-align: center; // Centrar el texto
+  color: #f9c336; // Color del texto
+  margin: 10px 0; // Margen vertical
+}
+
+ion-footer {
+  background-color: #001c54; // Color de fondo de la barra
+  color: #f9c336; // Color del texto
+}
+
+ion-button {
+  --background: transparent; // Fondo transparente para los botones
+  --color: #f9c336; // Color del texto
+}

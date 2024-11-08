@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h1 class="welcome-text">Tus Playlists</h1>
+
+    <div class="playlist" (click)="navigateToPlaylist1()">
+      <img src="assets/img/eminem-album.jpg" alt="Playlist 1" />
+      <div class="playlist-title">MegaMix</div>
+    </div>
+
+    <div class="playlist" (click)="navigateToPlaylist2()">
+      <img src="assets/img/duki-album.jpg" alt="Playlist 2" />
+      <div class="playlist-title">Argentinos</div>
+    </div>
+
+    <div class="playlist" (click)="navigateToPlaylist3()">
+      <img src="assets/img/michael-album.jpg" alt="Playlist 3" />
+      <div class="playlist-title">Clasicos</div>
+    </div>
+
+    <ion-button class="custom-button" (click)="addNewPlaylist()">
+      Agregar Nueva Playlist
+    </ion-button>
+  </div>
+</ion-content>
+

@@ -1,0 +1,41 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-searchbar 
+    [(ngModel)]="searchText" 
+    (ionInput)="onSearch($event)" 
+    placeholder="Buscar...">
+  </ion-searchbar>
+
+  <!-- Mensaje que muestra lo que se está buscando -->
+  <div *ngIf="searchText" class="search-message">
+    <p>Buscando: <strong>{{ searchText }}</strong></p>
+  </div>
+
+  <!-- Lista de resultados -->
+  <ion-list *ngIf="resultados.length > 0">
+    <ion-item *ngFor="let cancion of resultados" (click)="reproducirCancion(cancion.url)">
+      {{ cancion.nombre }}
+    </ion-item>
+  </ion-list>
+
+  <!-- Mensaje cuando no se encuentran resultados -->
+  <div *ngIf="resultados.length === 0 && searchText" class="no-results-message">
+    <p>No se encontraron resultados para "<strong>{{ searchText }}</strong>"</p>
+  </div>
+</ion-content>
+
+<!-- Barra de control de audio -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="togglePlay()">
+        {{ isPlaying ? 'Pausar' : 'Reproducir' }}
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="volverAReproducir()">Volver a Reproducir</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,88 @@
+ion-header {
+  background-color: #000000; /* Color de fondo negro */
+}
+
+ion-toolbar {
+  --background: #000000; /* Asegúrate de que el fondo de la toolbar sea negro */
+  --color: #f9c336; /* Color del texto de la toolbar */
+}
+
+ion-content {
+  --background: linear-gradient(to bottom, #001c54 0%, #000000 100%);
+  display: flex; /* Agregado para usar flexbox */
+  flex-direction: column; /* Cambiado a columna para alinear verticalmente */
+  justify-content: center; /* Centra los elementos en el eje vertical */
+  align-items: center; /* Centra horizontalmente */
+  padding: 20px; /* Añade espacio interior */
+}
+
+#logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Ajusta el espacio entre el logo y los campos */
+}
+
+ion-avatar {
+  display: inline-block; /* Asegúrate de que el avatar esté en línea y pueda ser centrado */
+  width: 120px; /* Ajusta el tamaño del avatar según sea necesario */
+  height: 120px; /* Ajusta el tamaño del avatar según sea necesario */
+}
+
+#container {
+  text-align: center;
+  margin-top: 20px; /* Espacio superior para mover las casillas hacia abajo */
+  padding: 20px;
+  width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+}
+
+.custom-button {
+  width: 200px; /* Ancho fijo para los botones */
+  margin: 10px auto; /* Centra los botones y añade margen */
+  --background: #001c54; /* Color de fondo azul oscuro */
+  --color: #f9c336; /* Color del texto amarillo */
+  --border-radius: 12px; /* Bordes redondeados */
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el botón */
+}
+
+#text-container {
+  margin-top: 40px; /* Ajusta este valor para mover el texto más abajo */
+}
+
+#text-container a {
+  color: #f9c336; /* Color del enlace */
+  text-decoration: none;
+}
+
+.register-link {
+  color: #ffffff; /* Color de la letra blanca */
+  text-align: center; /* Centra el texto */
+  margin-top: 10px; /* Espacio superior del texto */
+}
+
+.register-link a {
+  color: #f9c336; /* Color del enlace amarillo */
+  text-decoration: none; /* Sin subrayado */
+}
+
+ion-item {
+  --background: #001c54; /* Color de fondo azul oscuro para los contenedores */
+  --color: #f9c336; /* Color del texto */
+  --border-radius: 8px; /* Bordes redondeados */
+  margin: 10px; /* Margen superior e inferior */
+  padding: 15px; /* Espaciado interno */
+}
+
+ion-label {
+  color: #f9c336; /* Color del texto de las etiquetas en amarillo */
+}
+
+ion-input {
+  color: #ffffff; /* Color del texto de entrada en blanco */
+  --placeholder-color: #cccccc; /* Color del texto de marcador en gris */
+}
+
+.left-label {
+  margin-top: -15px; /* Ajusta este valor según sea necesario */
+  margin-left: 0; /* Asegura que esté alineado a la izquierda */
+  font-size: 14px; /* Tamaño de fuente más pequeño, ajusta si es necesario */
+  display: block; /* Asegura que se comporten como bloques */
+}

@@ -1,0 +1,32 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div id="logo-container">
+    <ion-avatar>
+      <img alt="Avatar" src="assets/img/DZ0IMG.jpg" /> <!-- Actualiza la ruta aquí -->
+    </ion-avatar>
+  </div>
+
+  <!-- Etiquetas fuera del contenedor -->
+  <ion-label position="floating" class="left-label">Nombre</ion-label>
+  <ion-item>
+    <ion-input type="text" value="admin" readonly></ion-input>
+  </ion-item>
+
+  <ion-label position="floating" class="left-label">Correo</ion-label>
+  <ion-item>
+    <ion-input type="email" value="admin@example.com" readonly></ion-input>
+  </ion-item>
+
+  <ion-label position="floating" class="left-label">Número de Teléfono</ion-label>
+  <ion-item>
+    <ion-input type="tel" value="+56 9 12345678" readonly></ion-input>
+  </ion-item>
+
+  <div id="container">
+    <ion-button expand="full" (click)="editData()" class="custom-button">
+      Editar Datos
+    </ion-button>
+  </div>
+</ion-content>
